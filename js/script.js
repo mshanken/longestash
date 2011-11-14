@@ -8,6 +8,11 @@ yepnope.addPrefix('amazon', function(resourceObj) {
 	resourceObj.url = 'https://s3.amazonaws.com/toolkit.mshanken.com/' + resourceObj.url;
 	return resourceObj;
 });
+// Prefix for Stephen
+yepnope.addPrefix('stephen', function(resourceObj) {
+	resourceObj.url = 'http://localhost/' + resourceObj.url;
+	return resourceObj;
+});
 
 // Jquery
 yepnope([{
@@ -22,38 +27,34 @@ yepnope([{
 		console.info('Loaded: jQuery');
 	}
 }]);
-// Countdown
-    yepnope({
-    test: document.getElementById('countdown_dashboard'),
-    yep: {
-    'CountdownJS': 'js/jquery.lwtCountdown-1.0.js'
-    },
-    callback: {
-    'CountdownJS' : function(url, result, key){
-    console.info('Loaded: CountdownJS');
-    $('#countdown_dashboard').countDown({
-					targetDate: {
-						'day': 		15,
-						'month': 	11,
-						'year': 	2011,
-						'hour': 	11,
-						'min': 		0,
-						'sec': 		0
-					}
-				});
-    }
-    }
-    });
+
     
-// accordian via http://www.sohtanaka.com/web-design/simple-accordion-w-css-and-jquery/
+// Accordion
+yepnope({
+	test: document.getElementsByClassName('accordion').length,
+	yep: {
+		'AccordionJS': 'amazon!plugins/accordion/accordion.js',
+	},
+	callback: {
+		'AccordionJS' : function(url, result, key){
+			console.info('Loaded: AccordionJS');
+		}
+	}
+});
+
+// twitter stuff
 	yepnope({
-	    test: document.getElementsByName('acc'),
+	    test: document.getElementsByName('la'),
 	    yep: {
-	    'accJS': 'js/accordian.js'
+	    'mousewheelJS': 'amazon!fancybox/jquery.mousewheel-3.0.4.pack.js',
+		'fancyboxJS': 'amazon!fancybox/jquery.fancybox-1.3.4.pack.js',
+		'laJS': 'amazon!js/twitter.js',
+	    'masonJS': 'amazon!js/jquery.masonry.min.js',
+	    'fancyboxCSS': 'amazon!fancybox/jquery.fancybox-1.3.4.css'    	    
 	    },
 	    callback: {
-	    'accJS' : function(url, result, key){
-	    console.info('Loaded: accJS');
+	    'laJS' : function(url, result, key){
+	    console.info('Loaded: laJS');
 	    
 	    }
 	    }
