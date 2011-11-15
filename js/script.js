@@ -46,11 +46,11 @@ yepnope({
 	yepnope({
 	    test: document.getElementsByName('la'),
 	    yep: {
-	    'mousewheelJS': 'amazon!fancybox/jquery.mousewheel-3.0.4.pack.js',
-		'fancyboxJS': 'amazon!fancybox/jquery.fancybox-1.3.4.pack.js',
-		'laJS': 'amazon!js/twitter.js',
-	    'masonJS': 'amazon!js/jquery.masonry.min.js',
-	    'fancyboxCSS': 'amazon!fancybox/jquery.fancybox-1.3.4.css'    	    
+	    'mousewheelJS': 'amazon!plugins/fancybox/jquery.mousewheel-3.0.4.pack.js',
+		'fancyboxJS': 'amazon!plugins/fancybox/jquery.fancybox-1.3.4.pack.js',
+		'laJS': 'http://longestashcontest.cigaraficionado.com/js/twitter.js',
+	    'masonJS': 'amazon!plugins/masonry/masonry.min.js',
+	    'fancyboxCSS': 'amazon!plugins/fancybox/jquery.fancybox-1.3.4.css'    	    
 	    },
 	    callback: {
 	    'laJS' : function(url, result, key){
