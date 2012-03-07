@@ -74,7 +74,7 @@ img#calogo {
 	border: 1px solid rgba(0,0,0,0.6);
 	border-radius: 8px;
 	padding: 15px 15px;
-	margin: 0 0 20px 0;
+	margin: 0 0 60px 0;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.1) inset;
 }
 #tweets {
@@ -175,6 +175,7 @@ a:active {color:#fafafa; text-decoration: none;} /*selected*/
 	padding: 0;
 	margin: 0;
 }
+
 /*---accordian---*/
 h2.accTitle {
 	padding: 0;	margin: 0 0 0 0;
@@ -206,7 +207,7 @@ footer, .push {
 }
 .wrapper {
     height: auto !important;
-    margin: 0 auto -37px;
+    margin: 0 auto -76px;
     min-height: 100%;
 }
 /*--tweet stuff--*/
@@ -235,4 +236,39 @@ footer, .push {
 	font-style: italic;
 	color:#afafaf;
 	color: rgba(244,244,244,0.6);
+}
+/*---finalists---*/
+#finalists{
+	margin: 0;padding: 0;
+}
+#finalists h3{
+	margin:12px 0 0; 
+	padding:0;
+	font-weight: bolder;
+	font-style: normal;
+	color: #e2383f;
+	color: rgba(226,56,63,1);
+	text-transform: uppercase;
+}
+#finalists ul{
+	margin: 8px 0 0 38px;
+	padding: 0;
+}
+#finalists ul li{
+	list-style: none;
+	float: left;
+}
+
+#finalists ul li img{
+	width: 96px;
+	margin:0 4px 5px 0;
+	padding: 8px;
+	word-wrap: break-word;
+	float:left;
+	background-image: url(../img/noise.png);
+	background-color: #767676;
+	background-color: rgba(110,110,110,0.3);
+	border: 0px solid rgba(110,110,110,0.7);
+	border-radius: 4px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.4), 0 1px 0 rgba(225,225,225,0.2) inset;
 }
