@@ -54,9 +54,10 @@ img#calogo {
 	background: url(../img/cigar.png) center right no-repeat;
 }
 #headline p {
-	padding: 10px 390px 0 0;
+	padding: 10px 395px 0 0;
 	font-weight: normal;
 	line-height: 1.7;
+	font-size:12px;
 	text-transform: none;
 }
 #content {
@@ -116,7 +117,7 @@ a:active {color:#fafafa; text-decoration: none;} /*selected*/
 
 #headline h1 {
 	text-align: right;
-	font-size: 56px;
+	font-size: 50px;
 	line-height: 1;
 	margin: 0;
 	padding: 10px 0 0 0;
@@ -133,7 +134,7 @@ a:active {color:#fafafa; text-decoration: none;} /*selected*/
 	list-style: none;
 }
 #rules h2 {
-	font-size: 24px;
+	font-size: 22px;
 	text-transform: uppercase;
 	line-height: 1.2;
 	text-shadow: 1px 2px 1px rgba(0,0,0,1);
